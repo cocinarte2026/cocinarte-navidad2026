@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Navidad 2026 · CocinArte</title>
+<meta name="description" content="Regalos corporativos, canastas navideñas, amigo secreto y celebraciones de fin de año para su empresa. CocinArte Costa Rica.">
+<meta property="og:title" content="Navidad 2026 · CocinArte">
+<meta property="og:description" content="Regalos corporativos, canastas, amigo secreto y estaciones navideñas para su empresa.">
+<meta property="og:image" content="img/detalles.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --red:#B3141B; --red-dark:#7A0C11; --green:#0F3B2C; --gold:#C9A24A;
+    --ink:#1D1A19; --muted:#5E5654; --line:#EAE4E1; --bg:#FFFFFF; --soft:#FBF6F4;
+    --wa:#1FA855;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{font-family:"DM Sans",system-ui,sans-serif;color:var(--ink);background:var(--bg);line-height:1.55;-webkit-font-smoothing:antialiased}
+  img{max-width:100%;display:block}
+  a{color:inherit}
+  .wrap{max-width:1160px;margin:0 auto;padding:0 22px}
+  h1,h2,h3{font-family:"Fraunces",Georgia,serif;font-weight:700;line-height:1.1;letter-spacing:-.01em}
+
+  /* Top bar */
+  .top{position:sticky;top:0;z-index:20;background:rgba(255,255,255,.94);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+  .top .wrap{display:flex;align-items:center;justify-content:space-between;height:64px}
+  .brand{display:flex;align-items:center;gap:10px;text-decoration:none;font-weight:700}
+  .brand img{width:38px;height:38px;border-radius:6px}
+  .brand span{font-size:15px;color:var(--muted);font-weight:500}
+  .btn{display:inline-flex;align-items:center;gap:8px;border-radius:999px;padding:12px 20px;font-weight:700;font-size:15px;text-decoration:none;border:0;cursor:pointer;transition:transform .15s ease, box-shadow .15s ease}
+  .btn:hover{transform:translateY(-1px)}
+  .btn-wa{background:var(--wa);color:#fff;box-shadow:0 6px 18px rgba(31,168,85,.28)}
+  .btn-light{background:#fff;color:var(--red-dark)}
+  .btn-ghost{background:transparent;color:#fff;border:1.5px solid rgba(255,255,255,.55)}
+  .btn svg{width:18px;height:18px;flex:none}
+  .top .btn{padding:9px 16px;font-size:14px}
+
+  /* Hero */
+  .hero{position:relative;overflow:hidden;color:#fff;background:radial-gradient(1200px 600px at 85% 20%, #C61D24 0%, var(--red) 35%, var(--red-dark) 100%)}
+  .hero .wrap{display:grid;grid-template-columns:1.1fr .9fr;gap:40px;align-items:center;padding-top:70px;padding-bottom:80px}
+  .eyebrow{display:inline-block;font-size:13px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--gold);margin-bottom:18px}
+  .hero h1{font-size:clamp(40px,6vw,68px);margin-bottom:20px}
+  .hero h1 em{font-style:italic;color:#FFE3A8;font-weight:500}
+  .hero p.lead{font-size:clamp(17px,2vw,19px);max-width:540px;opacity:.93;margin-bottom:28px}
+  .hero .ctas{display:flex;flex-wrap:wrap;gap:12px}
+  .cicr{margin-top:30px;display:flex;gap:14px;align-items:flex-start;background:rgba(0,0,0,.18);border:1px solid rgba(255,255,255,.18);border-radius:14px;padding:16px 18px;max-width:540px}
+  .cicr b{color:#FFE3A8}
+  .cicr .star{flex:none;width:34px;height:34px;border-radius:50%;background:var(--gold);color:var(--red-dark);display:grid;place-items:center;font-size:18px}
+  .hero-art{position:relative;display:grid;place-items:center}
+  .hero-art .collage{position:relative;width:100%;max-width:420px;aspect-ratio:3/4}
+  .hero-art .collage img{position:absolute;border-radius:14px;box-shadow:0 24px 50px rgba(0,0,0,.35);object-fit:cover}
+  .hero-art .c1{width:66%;left:0;top:6%;transform:rotate(-4deg)}
+  .hero-art .c2{width:62%;right:0;top:0;transform:rotate(5deg)}
+  .hero-art .c3{width:64%;left:18%;bottom:-4%;transform:rotate(-1deg);z-index:2}
+  .hero .esfera{position:absolute;width:210px;right:-40px;bottom:-60px;opacity:.16;pointer-events:none}
+
+  /* Chips */
+  .chips{border-bottom:1px solid var(--line);background:#fff}
+  .chips .wrap{display:flex;gap:10px;overflow-x:auto;padding-top:16px;padding-bottom:16px;scrollbar-width:none}
+  .chip{white-space:nowrap;font-size:14px;font-weight:600;padding:9px 16px;border-radius:999px;border:1.5px solid var(--line);background:#fff;cursor:pointer;color:var(--ink)}
+  .chip.on{background:var(--green);border-color:var(--green);color:#fff}
+
+  /* Sections */
+  section.block{padding:72px 0}
+  .sec-head{max-width:640px;margin-bottom:36px}
+  .sec-head .eyebrow{color:var(--red)}
+  .sec-head h2{font-size:clamp(30px,4vw,42px);margin-bottom:10px}
+  .sec-head p{color:var(--muted);font-size:17px}
+
+  /* Products */
+  .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(310px,1fr));gap:26px}
+  .card{background:#fff;border:1px solid var(--line);border-radius:18px;overflow:hidden;display:flex;flex-direction:column;transition:box-shadow .2s ease, transform .2s ease}
+  .card:hover{box-shadow:0 18px 40px rgba(60,20,20,.12);transform:translateY(-2px)}
+  .card .ph{position:relative;aspect-ratio:718/1024;background:var(--soft);cursor:zoom-in;overflow:hidden}
+  .card .ph img{width:100%;height:100%;object-fit:cover;transition:transform .4s ease}
+  .card:hover .ph img{transform:scale(1.03)}
+  .tag{position:absolute;bottom:12px;left:12px;background:rgba(255,255,255,.95);color:var(--green);font-size:12px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;padding:6px 10px;border-radius:999px}
+  .card .body{padding:20px 20px 22px;display:flex;flex-direction:column;gap:10px;flex:1}
+  .card h3{font-size:23px}
+  .card p{color:var(--muted);font-size:15px}
+  .card ul{list-style:none;display:flex;flex-wrap:wrap;gap:6px;margin:2px 0 4px}
+  .card li{font-size:13px;background:var(--soft);border:1px solid var(--line);border-radius:8px;padding:4px 9px;color:var(--ink)}
+  .card .btn{margin-top:auto;justify-content:center}
+  .card.hide{display:none}
+
+  /* Steps */
+  .steps{background:var(--soft)}
+  .steps-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+  .step{background:#fff;border-radius:16px;padding:26px;border:1px solid var(--line)}
+  .step .n{width:42px;height:42px;border-radius:50%;background:var(--red);color:#fff;display:grid;place-items:center;font-family:"Fraunces",serif;font-weight:700;font-size:20px;margin-bottom:14px}
+  .step h3{font-size:21px;margin-bottom:6px}
+  .step p{color:var(--muted);font-size:15px}
+
+  /* Comedores */
+  .comedor{background:var(--green);color:#fff;position:relative;overflow:hidden}
+  .comedor .wrap{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center}
+  .comedor .eyebrow{color:var(--gold)}
+  .comedor h2{font-size:clamp(30px,4vw,42px);margin-bottom:16px}
+  .comedor p{opacity:.9;font-size:17px;margin-bottom:22px}
+  .comedor h2{margin-bottom:10px}
+  .comedor p.tagline{font-family:"Fraunces",Georgia,serif;font-size:clamp(22px,2.6vw,28px);opacity:1;margin-bottom:22px;line-height:1.25}
+  .comedor p.tagline em{white-space:nowrap;font-style:italic;font-weight:700;color:#FFE3A8}
+  .stats{display:grid;grid-template-columns:1fr;gap:14px}
+  .stat{background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.14);border-radius:14px;padding:18px 22px}
+  .stat b{display:block;font-family:"Fraunces",serif;font-size:26px;color:#FFE3A8;line-height:1.15;margin-bottom:4px}
+  .stat span{font-size:15px;opacity:.88}
+  .comedor .corona{position:absolute;width:260px;left:-80px;bottom:-90px;opacity:.12}
+
+  /* Final CTA */
+  .final{text-align:center;padding:80px 0;background:radial-gradient(900px 400px at 50% 0%, #C61D24, var(--red-dark));color:#fff}
+  .final h2{font-size:clamp(30px,4.5vw,46px);margin-bottom:12px}
+  .final p{opacity:.92;font-size:18px;margin:0 auto 26px;max-width:560px}
+  .final .ctas{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
+  .contact-line{margin-top:22px;font-size:15px;opacity:.9}
+  .contact-line a{text-decoration:none;border-bottom:1px solid rgba(255,255,255,.4)}
+
+  footer{padding:28px 0;font-size:14px;color:var(--muted);border-top:1px solid var(--line)}
+  footer .wrap{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
+
+  /* Floating WA */
+  .fab{position:fixed;right:18px;bottom:18px;z-index:30;width:58px;height:58px;border-radius:50%;background:var(--wa);display:grid;place-items:center;box-shadow:0 10px 24px rgba(0,0,0,.25)}
+  .fab svg{width:30px;height:30px;fill:#fff}
+
+  /* Lightbox */
+  .lb{position:fixed;inset:0;background:rgba(15,8,8,.88);display:none;align-items:center;justify-content:center;z-index:50;padding:20px;cursor:zoom-out}
+  .lb.on{display:flex}
+  .lb img{max-height:92vh;max-width:92vw;border-radius:12px;box-shadow:0 20px 60px rgba(0,0,0,.5)}
+
+  @media (max-width:900px){
+    .hero .wrap,.comedor .wrap{grid-template-columns:1fr}
+    .hero .wrap{padding-top:48px;padding-bottom:56px}
+    .hero-art{order:-1}
+    .hero-art .collage{max-width:300px}
+    .steps-grid{grid-template-columns:1fr}
+    .top .brand span{display:none}
+  }
+  @media (max-width:520px){
+    .stat b{font-size:22px}
+    section.block{padding:56px 0}
+  }
+
+  .card .ph{aspect-ratio:950/1342}
+  .price{display:flex;gap:10px;margin-top:4px}
+  .price>div{flex:1;background:#FFF4F2;border:1px solid #F3D6D3;border-radius:12px;padding:10px 12px}
+  .price small{display:block;font-size:12px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--muted)}
+  .price b{font-family:"Fraunces",Georgia,serif;font-size:26px;color:var(--red);line-height:1.15}
+  .price b.q{font-family:"DM Sans",sans-serif;font-size:16px;color:var(--ink)}
+  .price.two>div:first-child{background:var(--green);border-color:var(--green)}
+  .price.two>div:first-child small{color:#CFE3D8}
+  .price.two>div:first-child b{color:#FFE3A8}
+  .rows{border:1px solid var(--line);border-radius:12px;overflow:hidden;margin-top:4px}
+  .rows div{display:flex;justify-content:space-between;gap:10px;padding:9px 12px;font-size:14px;border-top:1px solid var(--line)}
+  .rows div:first-child{border-top:0}
+  .rows b{color:var(--red);white-space:nowrap}
+  .rows div:nth-child(odd){background:var(--soft)}
+  .budget{padding:0 0 72px}
+  .budget-box{display:grid;grid-template-columns:280px 1fr;gap:36px;align-items:center;background:var(--soft);border:1px solid var(--line);border-radius:22px;padding:28px}
+  .budget-box img{border-radius:14px;box-shadow:0 14px 30px rgba(60,20,20,.15)}
+  .budget-box .eyebrow{color:var(--red)}
+  .budget-box h2{font-size:clamp(28px,3.6vw,38px);margin-bottom:10px}
+  .budget-box p{color:var(--muted);font-size:17px;margin-bottom:20px;max-width:560px}
+  .budget-box .ctas{display:flex;gap:10px;flex-wrap:wrap}
+  .btn-outline{background:#fff;color:var(--red-dark);border:1.5px solid #E8C9C6}
+  @media (max-width:760px){.budget-box{grid-template-columns:1fr}.budget-box img{max-width:240px}}
+</style>
+</head>
+<body>
+
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="#inicio"><img src="img/logo.jpg" alt="CocinArte"><span>Navidad 2026</span></a>
+    <a class="btn btn-wa wa" data-msg="Hola CocinArte, quiero cotizar productos de su catálogo de Navidad 2026 para mi empresa." href="#">
+      <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.5 3.5A11.8 11.8 0 0 0 12 0C5.4 0 .1 5.3.1 11.9c0 2.1.6 4.1 1.6 5.9L0 24l6.4-1.7a11.9 11.9 0 0 0 5.6 1.4h.1c6.6 0 11.9-5.3 11.9-11.9 0-3.2-1.2-6.2-3.5-8.3zM12 21.7c-1.8 0-3.5-.5-5-1.4l-.4-.2-3.8 1 1-3.7-.2-.4a9.8 9.8 0 0 1-1.5-5.2C2.1 6.4 6.5 2 12 2c2.6 0 5.1 1 7 2.9a9.8 9.8 0 0 1 2.9 7c0 5.4-4.4 9.8-9.9 9.8zm5.4-7.3c-.3-.1-1.8-.9-2-1-.3-.1-.5-.1-.7.1l-.9 1.2c-.2.2-.3.2-.6.1-.3-.1-1.3-.5-2.4-1.5-.9-.8-1.5-1.8-1.7-2.1-.2-.3 0-.5.1-.6l.5-.5.3-.5v-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1.1 2.9 1.2 3.1c.1.2 2.1 3.2 5.1 4.5.7.3 1.3.5 1.7.6.7.2 1.4.2 1.9.1.6-.1 1.8-.7 2-1.4.2-.7.2-1.3.2-1.4-.1-.1-.3-.2-.6-.3z"/></svg>
+      Cotizar
+    </a>
+  </div>
+</header>
+
+<section class="hero" id="inicio">
+  <div class="wrap">
+    <div>
+      <span class="eyebrow">Navidad 2026 · Regalos para empresas</span>
+      <h1>Una Navidad <em>inolvidable</em> para todo su equipo</h1>
+      <p class="lead">Canastas gourmet, regalos personalizados para el amigo secreto y estaciones navideñas para celebrar en la oficina. Hecho por CocinArte, con amor y tradición.</p>
+      <div class="ctas">
+        <a class="btn btn-light" href="#catalogo">Ver catálogo</a>
+        <a class="btn btn-ghost wa" data-msg="Hola CocinArte, quiero una cotización de Navidad 2026 para mi empresa." href="#">Cotizar por WhatsApp</a>
+      </div>
+      <div class="cicr">
+        <div class="star">★</div>
+        <div><b>¿Su empresa es asociada a la Cámara de Industrias?</b><br>CocinArte también es asociado. Pregúntenos por las condiciones especiales para asociados de la CICR.</div>
+      </div>
+    </div>
+    <div class="hero-art">
+      <div class="collage">
+        <img class="c1" src="img/canastas.jpg" alt="Canastas navideñas gourmet">
+        <img class="c2" src="img/chocolates.jpg" alt="Chocolates personalizados">
+        <img class="c3" src="img/detalles.jpg" alt="Pequeños detalles, grandes momentos">
+      </div>
+    </div>
+  </div>
+  <img class="esfera" src="img/esfera.png" alt="">
+</section>
+
+<nav class="chips" aria-label="Categorías">
+  <div class="wrap">
+    <button class="chip on" data-f="all">Todo</button>
+    <button class="chip" data-f="regalo">Regalos corporativos</button>
+    <button class="chip" data-f="amigo">Amigo secreto</button>
+    <button class="chip" data-f="compartir">Para compartir</button>
+    <button class="chip" data-f="evento">Celebraciones en su empresa</button>
+  </div>
+</nav>
+
+<section class="block" id="catalogo">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">Catálogo</span>
+      <h2>Elija el detalle perfecto</h2>
+      <p>Precios en colones. Para pedidos corporativos aplican precios por mayor. Escríbanos por WhatsApp y le enviamos la propuesta para su empresa.</p>
+    </div>
+
+    <div class="grid" id="grid">
+
+      <article class="card" data-c="regalo">
+        <div class="ph"><img src="img/canastas.jpg" alt="Canasta Navideña Gourmet" loading="lazy"><span class="tag">Gourmet y tradicional</span></div>
+        <div class="body">
+          <h3>Canasta Navideña Gourmet</h3>
+          <p>Una selección exclusiva de productos de calidad superior para celebrar la Navidad.</p>
+          <ul><li>Botella de vino a elegir</li><li>Pierna de cerdo</li><li>Queque navideño</li><li>Caja de chocolates</li></ul>
+          <div class="price two"><div><small>Por mayor</small><b>₡33.950</b></div><div><small>Al detalle</small><b>₡37.950</b></div></div>
+          <a class="btn btn-wa wa" data-msg="Hola CocinArte, me interesa cotizar: Canasta Navideña Gourmet." href="#">Pedir por WhatsApp</a>
+        </div>
+      </article>
+
+      <article class="card" data-c="regalo">
+        <div class="ph"><img src="img/navidad-especial.jpg" alt="Canasta Navidad Especial" loading="lazy"><span class="tag">Sin alcohol</span></div>
+        <div class="body">
+          <h3>Canasta Navidad Especial</h3>
+          <p>Una canasta completa y fresca, con espumante sin alcohol para que todos la disfruten.</p>
+          <ul><li>Espumante Blue Nun sin alcohol</li><li>Pechuga de pavo ahumada</li><li>Salame</li><li>Quesos Gouda y Edam</li><li>Peras y uvas</li><li>Mermelada de fresa</li><li>Semillas mixtas</li><li>Tostadas</li></ul>
+          <div class="price two"><div><small>Por mayor</small><b>₡34.900</b></div><div><small>Al detalle</small><b>₡38.900</b></div></div>
+          <a class="btn btn-wa wa" data-msg="Hola CocinArte, me interesa cotizar: Canasta Navidad Especial." href="#">Pedir por WhatsApp</a>
+        </div>
+      </article>
+
+      <article class="card" data-c="regalo">
+        <div class="ph"><img src="img/nuestro-sabor.jpg" alt="Canasta Nuestro Sabor" loading="lazy"><span class="tag">Tradicional</span></div>
+        <div class="body">
+          <h3>Canasta Nuestro Sabor</h3>
+          <p>Los sabores de siempre de la Navidad tica, con nuestro rompope artesanal.</p>
+          <ul><li>Queque navideño</li><li>Caja de chocolates</li><li>Melocotones</li><li>Rompope CocinArte 750 ml</li><li>Uvas</li></ul>
+          <div class="price two"><div><small>Por mayor</small><b>₡24.900</b></div><div><small>Al detalle</small><b>₡28.900</b></div></div>
+          <a class="btn btn-wa wa" data-msg="Hola CocinArte, me interesa cotizar: Canasta Nuestro Sabor." href="#">Pedir por WhatsApp</a>
+        </div>
+      </article>
+
+      <article class="card" data-c="regalo compartir">
+        <div class="ph"><img src="img/tabla.jpg" alt="Tabla de Fiambres y Quesos" loading="lazy"><span class="tag">4 a 6 personas</span></div>
+        <div class="body">
+          <h3>Tabla de Fiambres y Quesos</h3>
+          <p>Para compartir en la oficina o regalar: quesos, fiambres, frutas y vino.</p>
+          <ul><li>Queso Manchego</li><li>Queso Gouda o Cheddar</li><li>Queso Edam</li><li>Salame</li><li>Jamón ahumado</li><li>Fresas, arándanos, uvas y uchuvas</li><li>Tostadas de ciabatta y baguette</li><li>Vino a elegir (750 ml)</li></ul>
+          <div class="price two"><div><small>Por mayor</small><b>₡22.950</b></div><div><small>Al detalle</small><b>₡24.950</b></div></div>
+          <a class="btn btn-wa wa" data-msg="Hola CocinArte, me interesa cotizar: Tabla de Fiambres y Quesos." href="#">Pedir por WhatsApp</a>
+        </div>
+      </article>
+
+      <article class="card" data-c="amigo regalo">
+        <div class="ph"><img src="img/detalles.jpg" alt="Pequeños detalles, grandes momentos" loading="lazy"><span class="tag">Amigo secreto</span></div>
+        <div class="body">
+          <h3>Pequeños detalles, grandes momentos</h3>
+          <p>Caja de regalo para personalizar con el nombre de cada colaborador. Práctica, original y de material resistente.</p>
+          <ul><li>Vino Cabernet Sauvignon</li><li>6 galletas de queso parmesano</li><li>5 quesitos Gouda Grand'Or</li><li>Crayones para decorar la caja</li></ul>
+          <div class="price"><div><small>Precio</small><b>₡9.300</b></div></div>
+          <a class="btn btn-wa wa" data-msg="Hola CocinArte, me interesa cotizar: Pequeños detalles, grandes momentos." href="#">Pedir por WhatsApp</a>
+        </div>
+      </article>
+
+      <article class="card" data-c="amigo">
+        <div class="ph"><img src="img/sin-gluten.jpg" alt="Opciones libres de licor y sin gluten" loading="lazy"><span class="tag">Sin licor · Sin gluten</span></div>
+        <div class="body">
+          <h3>Opciones libres de licor y sin gluten</h3>
+          <p>Pregunte por nuestras versiones sin licor y sin gluten, pensadas para que nadie del equipo se quede sin su detalle.</p>
+          <ul><li>Caja para personalizar</li><li>Opciones sin licor</li><li>Opciones sin gluten</li></ul>
+          <div class="price"><div><small>Precio</small><b class="q">Cotice según su necesidad</b></div></div>
+          <a class="btn btn-wa wa" data-msg="Hola CocinArte, me interesa cotizar: Opciones libres de licor y sin gluten." href="#">Pedir por WhatsApp</a>
+        </div>
+      </article>
+
+      <article class="card" data-c="amigo regalo">
+        <div class="ph"><img src="img/chocolates.jpg" alt="Chocolates personalizados" loading="lazy"><span class="tag">Personalizado</span></div>
+        <div class="body">
+          <h3>Chocolates personalizados</h3>
+          <p>Barra de chocolate con el nombre, el diseño y el mensaje que usted elija.</p>
+          <ul><li>10,5 × 5,5 cm</li><li>Nombre y diseño a elección</li><li>Mensaje personalizado</li></ul>
+          <div class="price"><div><small>Precio</small><b>₡2.000</b></div></div>
+          <a class="btn btn-wa wa" data-msg="Hola CocinArte, me interesa cotizar: Chocolates personalizados." href="#">Pedir por WhatsApp</a>
+        </div>
+      </article>
+
+      <article class="card" data-c="amigo compartir">
+        <div class="ph"><img src="img/casita.jpg" alt="Casita de chocolate" loading="lazy"><span class="tag">Para armar en familia</span></div>
+        <div class="body">
+          <h3>Casita de chocolate</h3>
+          <p>Kits individuales para armar en casa. Un regalo para compartir en familia y hacer tradición.</p>
+          <ul><li>Kit individual para montaje</li><li>Empaque navideño</li></ul>
+          <div class="price"><div><small>Precio</small><b>₡15.000</b></div></div>
+          <a class="btn btn-wa wa" data-msg="Hola CocinArte, me interesa cotizar: Casita de chocolate." href="#">Pedir por WhatsApp</a>
+        </div>
+      </article>
+
+      <article class="card" data-c="compartir">
+        <div class="ph"><img src="img/sabores.jpg" alt="Sabores para compartir" loading="lazy"><span class="tag">Hecho en casa</span></div>
+        <div class="body">
+          <h3>Sabores para compartir</h3>
+          <p>Lo mejor de la Navidad tica, hecho con amor y tradición por nuestra cocina.</p>
+          
+          <div class="rows"><div><span>Rompope (con o sin alcohol) · 1 litro</span><b>₡7.300</b></div><div><span>Rompope · 500 ml</span><b>₡5.300</b></div><div><span>Pierna de cerdo · por kilo</span><b>₡14.900</b></div><div><span>Piña de tamales</span><b>₡1.800</b></div><div><span>Queque navideño · 1 libra</span><b>₡4.900</b></div><div><span>Queque navideño · 1,5 libras</span><b>₡6.500</b></div></div>
+          <a class="btn btn-wa wa" data-msg="Hola CocinArte, me interesa cotizar: Sabores para compartir." href="#">Pedir por WhatsApp</a>
+        </div>
+      </article>
+
+      <article class="card" data-c="evento">
+        <div class="ph"><img src="img/estacion.jpg" alt="Estación navideña" loading="lazy"><span class="tag">En su empresa</span></div>
+        <div class="body">
+          <h3>Estación navideña</h3>
+          <p>Montamos una estación navideña en su oficina para celebrar el fin de año con todo el equipo: rompope, queques, tamales y más.</p>
+          <ul><li>Montaje en su empresa</li><li>Rompope y queques</li><li>Tamales</li></ul>
+          <div class="price"><div><small>Precio</small><b class="q">Cotice según su necesidad</b></div></div>
+          <a class="btn btn-wa wa" data-msg="Hola CocinArte, me interesa cotizar: Estación navideña." href="#">Pedir por WhatsApp</a>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<section class="budget">
+  <div class="wrap">
+    <div class="budget-box">
+      <img src="img/presupuesto.jpg" alt="Nos adaptamos a su presupuesto">
+      <div>
+        <span class="eyebrow">Hecho a la medida</span>
+        <h2>Nos adaptamos a su presupuesto</h2>
+        <p>Armamos canastas y regalos a la medida de su empresa. Consulte por las diferentes opciones disponibles y los precios por mayor para pedidos corporativos.</p>
+        <div class="ctas">
+          <a class="btn btn-wa wa" data-msg="Hola CocinArte, quisiera una propuesta de regalos navideños ajustada a nuestro presupuesto." href="#">Pedir propuesta por WhatsApp</a>
+          <a class="btn btn-outline" href="mailto:eventos@cocinartecr.com?subject=Propuesta%20Navidad%202026">eventos@cocinartecr.com</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="block steps">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">Así de fácil</span>
+      <h2>Cómo hacer su pedido</h2>
+    </div>
+    <div class="steps-grid">
+      <div class="step"><div class="n">1</div><h3>Elija sus productos</h3><p>Escoja del catálogo los regalos o la celebración que necesita su empresa.</p></div>
+      <div class="step"><div class="n">2</div><h3>Pida su cotización</h3><p>Escríbanos por WhatsApp con la cantidad y la fecha de entrega.</p></div>
+      <div class="step"><div class="n">3</div><h3>Nosotros nos encargamos</h3><p>Personalizamos, empacamos y entregamos en su empresa.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="block comedor">
+  <div class="wrap">
+    <div>
+      <span class="eyebrow">Más que Navidad</span>
+      <h2>Administramos servicios de alimentación</h2>
+      <p class="tagline">para equipos grandes y <em>grandes equipos</em></p>
+      <p>Desde 2009, CocinArte opera cafeterías y comedores para empresas en la Gran Área Metropolitana. Si su empresa busca un servicio de alimentación confiable para 2027, conversemos.</p>
+      <a class="btn btn-light wa" data-msg="Hola CocinArte, me interesa conocer su servicio de administración de comedores corporativos." href="#">Quiero saber más</a>
+    </div>
+    <div class="stats">
+      <div class="stat"><b>2009</b><span>en el mercado</span></div>
+      <div class="stat"><b>Sabor casero y variedad</b><span>6 ciclos de menú y un plato especial cada día</span></div>
+      <div class="stat"><b>Catering Service</b><span>Servicio de eventos para reuniones de equipos de trabajo y celebraciones</span></div>
+    </div>
+  </div>
+  <img class="corona" src="img/corona.png" alt="">
+</section>
+
+<section class="final" id="contacto">
+  <div class="wrap">
+    <h2>Haga de esta Navidad algo especial</h2>
+    <p>Cotice hoy y asegure la entrega de sus regalos antes de las fiestas de fin de año.</p>
+    <div class="ctas">
+      <a class="btn btn-wa wa" data-msg="Hola CocinArte, quiero cotizar productos de su catálogo de Navidad 2026 para mi empresa." href="#">WhatsApp 7158-8170</a>
+      <a class="btn btn-light" href="mailto:eventos@cocinartecr.com?subject=Cotizaci%C3%B3n%20Navidad%202026">eventos@cocinartecr.com</a>
+    </div>
+    <div class="contact-line">WhatsApp 7158-8170 · eventos@cocinartecr.com · <a href="https://www.cocinartecr.com">cocinartecr.com</a></div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <span>© 2026 CocinArte CR · Servicios de alimentación desde 2009</span>
+    <span>Empresa asociada a la Cámara de Industrias de Costa Rica</span>
+  </div>
+</footer>
+
+<a class="fab wa" data-msg="Hola CocinArte, quiero cotizar productos de su catálogo de Navidad 2026." href="#" aria-label="Escribir por WhatsApp">
+  <svg viewBox="0 0 24 24"><path d="M20.5 3.5A11.8 11.8 0 0 0 12 0C5.4 0 .1 5.3.1 11.9c0 2.1.6 4.1 1.6 5.9L0 24l6.4-1.7a11.9 11.9 0 0 0 5.6 1.4h.1c6.6 0 11.9-5.3 11.9-11.9 0-3.2-1.2-6.2-3.5-8.3zM12 21.7c-1.8 0-3.5-.5-5-1.4l-.4-.2-3.8 1 1-3.7-.2-.4a9.8 9.8 0 0 1-1.5-5.2C2.1 6.4 6.5 2 12 2c2.6 0 5.1 1 7 2.9a9.8 9.8 0 0 1 2.9 7c0 5.4-4.4 9.8-9.9 9.8zm5.4-7.3c-.3-.1-1.8-.9-2-1-.3-.1-.5-.1-.7.1l-.9 1.2c-.2.2-.3.2-.6.1-.3-.1-1.3-.5-2.4-1.5-.9-.8-1.5-1.8-1.7-2.1-.2-.3 0-.5.1-.6l.5-.5.3-.5v-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1.1 2.9 1.2 3.1c.1.2 2.1 3.2 5.1 4.5.7.3 1.3.5 1.7.6.7.2 1.4.2 1.9.1.6-.1 1.8-.7 2-1.4.2-.7.2-1.3.2-1.4-.1-.1-.3-.2-.6-.3z"/></svg>
+</a>
+
+<div class="lb" id="lb"><img alt=""></div>
+
+<script>
+  // WhatsApp links with prefilled message
+  var WA = "50671588170";
+  document.querySelectorAll(".wa").forEach(function(a){
+    var msg = a.getAttribute("data-msg") || "Hola CocinArte";
+    a.href = "https://wa.me/" + WA + "?text=" + encodeURIComponent(msg);
+    a.target = "_blank"; a.rel = "noopener";
+  });
+
+  // Category filter
+  var chips = document.querySelectorAll(".chip"), cards = document.querySelectorAll(".card");
+  chips.forEach(function(ch){
+    ch.addEventListener("click", function(){
+      chips.forEach(function(c){ c.classList.remove("on"); });
+      ch.classList.add("on");
+      var f = ch.getAttribute("data-f");
+      cards.forEach(function(card){
+        var cats = card.getAttribute("data-c").split(" ");
+        card.classList.toggle("hide", f !== "all" && cats.indexOf(f) === -1);
+      });
+      document.getElementById("catalogo").scrollIntoView({behavior:"smooth"});
+    });
+  });
+
+  // Lightbox
+  var lb = document.getElementById("lb"), lbImg = lb.querySelector("img");
+  document.querySelectorAll(".card .ph img").forEach(function(img){
+    img.addEventListener("click", function(){ lbImg.src = img.src; lbImg.alt = img.alt; lb.classList.add("on"); });
+  });
+  lb.addEventListener("click", function(){ lb.classList.remove("on"); });
+  document.addEventListener("keydown", function(e){ if(e.key === "Escape") lb.classList.remove("on"); });
+</script>
+</body>
+</html>
